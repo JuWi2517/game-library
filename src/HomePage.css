@@ -1,0 +1,34 @@
+.homepage-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.homepage-container input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-container .movie-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .homepage-container input[type="text"] {
+        width: 90%;
+    }
+
+    .homepage-container .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
